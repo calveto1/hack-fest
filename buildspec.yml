@@ -15,11 +15,11 @@ phases:
       # - command
   pre_build:
     commands:
-      bundle install
-      RAILS_ENV=test rails db:migrate
+      - bundle install
+      - RAILS_ENV=test rails db:migrate
   build:
     commands:
-      bundle exec rake test
+      - bundle exec rake test
       # - command
   #post_build:
     #commands:

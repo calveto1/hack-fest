@@ -9,8 +9,9 @@ version: 0.2
      # key: "value"
 
 phases:
-  #install:
-    #commands:
+  install:
+    commands:
+      - gem install bundler
       # - command
       # - command
   pre_build:

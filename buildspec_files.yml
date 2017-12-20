@@ -17,7 +17,7 @@ phases:
     #commands:
   build:
     commands:
-      - ruby files.rb
+      - ruby files.rb > test_files.json
       # - command
   #post_build:
     #commands:

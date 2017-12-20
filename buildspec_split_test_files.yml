@@ -26,6 +26,10 @@ phases:
     #commands:
       # - command
       # - command
+cache:
+  paths:
+    - 'vendor/**/*'
+
 artifacts:
   files:
     - '**/*'

@@ -32,9 +32,9 @@ cache:
   paths:
     - 'vendor/**/*'
 
-artifacts:
-  files:
-    - '**/*'
+      #artifacts:
+      # files:
+      #- '**/*'
     # - test_files.json
     # - location
   #discard-paths: yes

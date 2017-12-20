@@ -14,8 +14,6 @@ phases:
       - cp config/database.codebuild.yml config/database.yml
       - gem install bundler
       - bundle install
-      # - command
-      # - command
   pre_build:
     commands:
       - RAILS_ENV=test rails db:create
@@ -23,11 +21,9 @@ phases:
   build:
     commands:
       - bundle exec rake test:pipeline
-      # - command
-  #post_build:
-    #commands:
-      # - command
-      # - command
+  post_build:
+    commands:
+      - bundle exec db:drop
 artifacts:
   files:
     - pipeline_files.json

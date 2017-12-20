@@ -22,7 +22,7 @@ phases:
       - RAILS_ENV=test rails db:migrate
   build:
     commands:
-      - bundle exec rake test:pipeline
+      - bundle exec rake test:fast TEST_FILES=test/models/post_test.rb,test/models/post_2_test.rb
       # - command
   #post_build:
     #commands:

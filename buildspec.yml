@@ -13,7 +13,8 @@ phases:
     commands:
       - cp config/database.codebuild.yml config/database.yml
       - gem install bundler
-      - bundle install --local
+      - bundle install
+        #      - bundle install --local
   pre_build:
     commands:
       - RAILS_ENV=test rails db:create

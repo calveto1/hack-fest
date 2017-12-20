@@ -3,5 +3,5 @@ test:
   database: hack_test
   username: vtwa
   password: vtwavtwa
-  host: vtwatest.cp0tkl8jzepm.us-east-1.rds.amazonaws.com
+  host: vtwa.cp0tkl8jzepm.us-east-1.rds.amazonaws.com
   port: 3306

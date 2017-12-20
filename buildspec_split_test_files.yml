@@ -11,6 +11,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - gem install bundler
       - bundle package
       #- bundle install --deployment
       # - command

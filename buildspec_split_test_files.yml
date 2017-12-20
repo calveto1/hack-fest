@@ -12,8 +12,10 @@ phases:
   install:
     commands:
       - env | grep -i pipeline
-      - gem install bundler
-      - bundle package
+      - git log -1 | grep cat
+      - env
+        #- gem install bundler
+        #- bundle package
       #- bundle install --deployment
       # - command
   #pre_build:

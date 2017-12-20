@@ -17,7 +17,7 @@ phases:
     #commands:
   build:
     commands:
-      - ruby files.rb > data/test_files.json
+      - ruby files.rb > ./data/test_files.json
       # - command
   #post_build:
     #commands:

@@ -4,6 +4,9 @@ require 'pp'
 Rake::TestTask.new("test:pipeline") do |t|
   pipeline_index = ENV['PIPELINE']
   pipelines = JSON.parse(File.read(File.join(Rails.root.to_s, "pipeline_files.json")))
+  puts "-----------------------------------------------------"
+  pp pipelines
+  puts "-----------------------------------------------------"
   files = pipelines[pipeline_index]
 
   t.libs << 'test'

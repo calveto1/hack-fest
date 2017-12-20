@@ -11,6 +11,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - env | grep -i pipeline
       - gem install bundler
       - bundle package
       #- bundle install --deployment

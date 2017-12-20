@@ -28,9 +28,9 @@ phases:
     #commands:
       # - command
       # - command
-#artifacts:
-  #files:
-    # - location
+artifacts:
+  files:
+    - pipeline_files.json
     # - location
   #discard-paths: yes
   #base-directory: location

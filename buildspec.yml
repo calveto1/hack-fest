@@ -11,6 +11,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - cp config/database.aws.yml config/database.yml
       - gem install bundler
       # - command
       # - command

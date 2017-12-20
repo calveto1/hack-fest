@@ -25,7 +25,8 @@ phases:
       # - command
 artifacts:
   files:
-     - test_files.json
+    - '**/*'
+    # - test_files.json
     # - location
   #discard-paths: yes
   #base-directory: location

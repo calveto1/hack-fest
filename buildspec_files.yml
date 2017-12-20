@@ -17,7 +17,7 @@ phases:
     #commands:
   build:
     commands:
-      - ruby files.rb > ./data/test_files.json
+      - ruby files.rb > test_files.json
       # - command
   #post_build:
     #commands:
@@ -25,7 +25,7 @@ phases:
       # - command
 artifacts:
   files:
-     - data/test_files.json
+     - test_files.json
     # - location
   #discard-paths: yes
   #base-directory: location

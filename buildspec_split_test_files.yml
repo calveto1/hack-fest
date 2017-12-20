@@ -11,9 +11,9 @@ version: 0.2
 phases:
   install:
     commands:
-      - env | grep -i pipeline
-      - git log -1 | grep cat
       - env
+      - env | grep -i pipeline
+      - git log --oneline | nl -v0 | sed 's/^ \+/&HEAD~/'
         #- gem install bundler
         #- bundle package
       #- bundle install --deployment

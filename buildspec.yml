@@ -11,6 +11,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - ls -l vendor/cache
       - cp config/database.codebuild.yml config/database.yml
       - gem install bundler
       - bundle install --local

@@ -9,9 +9,10 @@ version: 0.2
      # key: "value"
 
 phases:
-  #install:
-  #  commands:
-      # - command
+  install:
+    commands:
+      - bundle package
+      #- bundle install --deployment
       # - command
   #pre_build:
     #commands:

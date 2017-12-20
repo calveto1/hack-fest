@@ -11,6 +11,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - git branch
       - env
       - env | grep -i pipeline
       - git log --oneline | nl -v0 | sed 's/^ \+/&HEAD~/'
